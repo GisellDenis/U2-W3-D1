@@ -6,6 +6,32 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Form per la creazione di oggetti "Pet"</h1>
+
+    <form onsubmit="createPet(event)">
+      <label for="petName">Nome animale:</label>
+      <input type="text" id="petName" name="petName"><br><br>
+    
+      <label for="ownerName">Nome proprietario:</label>
+      <input type="text" id="ownerName" name="ownerName"><br><br>
+    
+      <label for="species">Specie:</label>
+      <select id="species" name="species">
+        <option value="cane">Cane</option>
+        <option value="gatto">Gatto</option>
+        <option value="coniglio">Coniglio</option>
+      </select><br><br>
+    
+      <label for="breed">Razza:</label>
+      <input type="text" id="breed" name="breed"><br><br>
+    
+      <input type="submit" value="Aggiungi animale">
+    </form>
+    
+    <h2>Lista animali:</h2>
+    
+    <ul id="petList"></ul>
+    </form>
     <script src="./index.js"></script>
   </body>
 </html>
